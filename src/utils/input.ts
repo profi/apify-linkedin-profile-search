@@ -166,7 +166,7 @@ export async function handleInput({ isPaying }: { isPaying: boolean }): Promise<
   if (input.maxItems <= 0) {
     console.warn(
       styleText('bgYellow', ' [WARNING] ') +
-        ' No items left to scrape. Please increase the maxItems input or reduce the filters.',
+      ' No items left to scrape. Please increase the maxItems input or reduce the filters.',
     );
     await Actor.exit({ statusMessage: 'no items' });
   }
@@ -216,7 +216,7 @@ export async function handleInput({ isPaying }: { isPaying: boolean }): Promise<
   ) {
     console.warn(
       styleText('bgYellow', ' [WARNING] ') +
-        ' Deduplication is enabled, but MongoDB connection string is not provided. \n Please check the Information section https://console.apify.com/actors/M2FMdjRVeF1HPGFcc/information/latest/readme#deduplication.',
+      ' Deduplication is enabled, but MongoDB connection string is not provided. \n Please check the Information section https://console.apify.com/actors/M2FMdjRVeF1HPGFcc/information/latest/readme#deduplication.',
     );
     await Actor.exit({ statusMessage: 'no mongo connection string' });
   }

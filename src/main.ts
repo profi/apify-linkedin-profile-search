@@ -49,14 +49,14 @@ let hitRateLimit = false;
 const logFreeUserExceeding = () =>
   console.warn(
     styleText('bgYellow', ' [WARNING] ') +
-      ' Free users are limited up to 25 items per run. Please upgrade to a paid plan to scrape more items.',
+    ' Free users are limited up to 25 items per run. Please upgrade to a paid plan to scrape more items.',
   );
 
 if (!isPaying) {
   if (totalRuns > 10) {
     console.warn(
       styleText('bgYellow', ' [WARNING] ') +
-        ' Free users are limited to 10 runs. Please upgrade to a paid plan to run more.',
+      ' Free users are limited to 10 runs. Please upgrade to a paid plan to run more.',
     );
     await Actor.exit({
       statusMessage: 'free user run limit reached',

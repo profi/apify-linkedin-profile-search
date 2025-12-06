@@ -1,0 +1,11 @@
+{
+    "source": "linkedin_company",
+    "companyUrls": [
+        "https://www.linkedin.com/company/sopro-social-prospecting"
+    ],
+    "keywords": "",
+    "role": "",
+    "maxResults": 1,
+    "persistToListBuild": true,
+    "webhookUrl": "http://localhost:3000/webhook"
+}
